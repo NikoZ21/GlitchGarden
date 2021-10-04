@@ -5,6 +5,7 @@ using UnityEngine;
 public class Attacker : MonoBehaviour
 {
     [SerializeField] float walkSpeed;
+    
     void Update()
     {
         transform.Translate(Vector2.left * walkSpeed * Time.deltaTime);
