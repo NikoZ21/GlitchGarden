@@ -22,10 +22,10 @@ public class Shooter : MonoBehaviour
         }
         else
         {
-            animator.SetBool("IsShooting", false);
+
         }
     }
-    private void SetLaneSpawner()
+    void SetLaneSpawner()
     {
         var spawners = FindObjectsOfType<AttackerSpawner>();
         foreach (var spawner in spawners)
@@ -34,12 +34,12 @@ public class Shooter : MonoBehaviour
             if (IsCloseEnough)
             {
                 myLaneSpawner = spawner;
-            }
 
+
+            }
         }
     }
-
-    private bool IsAttackerInLane()
+    public bool IsAttackerInLane()
     {
         if (myLaneSpawner.transform.childCount <= 0)
         {

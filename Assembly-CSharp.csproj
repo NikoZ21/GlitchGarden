@@ -64,7 +64,6 @@
     <Compile Include="Assets\Scripts\DefenderButton.cs" />
     <Compile Include="Assets\Scripts\DisplayStars.cs" />
     <Compile Include="Assets\Scripts\SpawnDefenders.cs" />
-    <Compile Include="Assets\Animator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
