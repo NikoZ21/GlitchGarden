@@ -57,10 +57,14 @@
     <Compile Include="Assets\Scripts\Shooter.cs" />
     <Compile Include="Assets\Scripts\Projectile.cs" />
     <Compile Include="Assets\Scripts\LevelLoader.cs" />
+    <Compile Include="Assets\Scripts\Defender.cs" />
     <Compile Include="Assets\Scripts\AttackerSpawner.cs" />
     <Compile Include="Assets\Scripts\Attacker.cs" />
     <Compile Include="Assets\Scripts\Lizard.cs" />
+    <Compile Include="Assets\Scripts\DefenderButton.cs" />
+    <Compile Include="Assets\Scripts\DisplayStars.cs" />
     <Compile Include="Assets\Scripts\SpawnDefenders.cs" />
+    <Compile Include="Assets\Animator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -5,12 +5,15 @@ using UnityEngine;
 
 public class SpawnDefenders : MonoBehaviour
 {
-    [SerializeField] GameObject cactus;
-
+    [SerializeField] Defender defender;
     private void OnMouseDown()
     {
-        SpawnDefender(GetSquareClicked());
+        AttemptToPlaceDefenderAt(GetSquareClicked());
+    }
 
+    public void SetDefender(Defender defenderPrevab)
+    {
+        defender = defenderPrevab;
     }
 
     private Vector2 GetSquareClicked()
@@ -20,16 +23,26 @@ public class SpawnDefenders : MonoBehaviour
         Vector2 gridPos = snapToGrid(worldPos);
         return gridPos;
     }
-
+    public void AttemptToPlaceDefenderAt(Vector2 gridPos)
+    {
+        var starDisplay = FindObjectOfType<DisplayStars>();
+        int defenderCost = defender.GetStarCost();
+        if (starDisplay.HaveEnoughStars(defenderCost))
+        {
+            SpawnDefender(gridPos);
+            starDisplay.SpendingStars(defenderCost);
+        }
+    }
     private Vector2 snapToGrid(Vector2 worldPos)
     {
         float newX = Mathf.RoundToInt(worldPos.x);
-        float newY = Mathf.RoundToInt(worldPos.y) + 0.2f;
+        float newY = Mathf.RoundToInt(worldPos.y);
         return new Vector2(newX, newY);
     }
 
     private void SpawnDefender(Vector2 worlPos)
     {
-        GameObject newDefender = Instantiate(cactus, worlPos, transform.rotation) as GameObject;
+        if (!defender) return;
+        Defender newDefender = Instantiate(defender, worlPos, transform.rotation) as Defender;
     }
 }
