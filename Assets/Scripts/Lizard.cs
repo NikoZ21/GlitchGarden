@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Lizard : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
+        GameObject otherObject = collision.gameObject;
+        if (otherObject.GetComponent<Defender>())
+        {
+            GetComponent<Attacker>().Attack(otherObject);
+            GetComponent<Attacker>().SetMovementSpeed(0);
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

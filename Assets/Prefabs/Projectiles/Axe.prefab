@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5558546494327992493}
   - component: {fileID: 5558546494327992492}
   - component: {fileID: 5558546494327992491}
+  - component: {fileID: -1290230611201953409}
+  - component: {fileID: 2734974047722168469}
   m_Layer: 0
   m_Name: Axe
   m_TagString: Untagged
@@ -66,6 +68,67 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   damage: 100
+--- !u!50 &-1290230611201953409
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5558546494327992490}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!60 &2734974047722168469
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5558546494327992490}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.23748207, y: 0.16328955}
+      - {x: 0.22261572, y: 0.2033577}
+      - {x: 0.19694519, y: 0.18700457}
+      - {x: 0.16270828, y: 0.18517637}
+      - {x: 0.09272146, y: 0.22256613}
+      - {x: -0.022865832, y: 0.218344}
+      - {x: -0.10346413, y: 0.12406111}
+      - {x: -0.23631144, y: -0.16716862}
+      - {x: -0.1768269, y: -0.21642005}
+      - {x: -0.14144707, y: -0.19802046}
+      - {x: -0.12192726, y: -0.08666086}
+      - {x: 0.04893112, y: 0.09078765}
+      - {x: 0.15617144, y: -0.022602081}
+      - {x: 0.19915295, y: 0.01568079}
+      - {x: 0.24001312, y: 0.07666153}
 --- !u!1 &5558546494354822036
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,7 +154,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5558546494354822036}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.18, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5558546494327992493}

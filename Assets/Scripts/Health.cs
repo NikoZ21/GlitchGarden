@@ -27,8 +27,6 @@ namespace Assets.Scripts
             if (!deathVFX) return;
             var deathVFXObject = Instantiate(deathVFX, transform.position, transform.rotation);
             Destroy(deathVFXObject, 1f);
-
-
         }
     }
 }

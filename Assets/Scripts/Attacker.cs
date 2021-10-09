@@ -5,7 +5,7 @@ using UnityEngine;
 public class Attacker : MonoBehaviour
 {
     [SerializeField] float walkSpeed = 1f;
-
+    GameObject currentTarget;
     void Update()
     {
         transform.Translate(Vector2.left * walkSpeed * Time.deltaTime);
@@ -13,7 +13,11 @@ public class Attacker : MonoBehaviour
 
     public void SetMovementSpeed(float speed)
     {
-        walkSpeed = speed;
+        walkSpeed = speed;                  
     }
-
+    public void Attack(GameObject target)
+    {
+        GetComponent<Animator>().SetBool("IsAttacking", true);
+        currentTarget = target;
+    }
 }
