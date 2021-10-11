@@ -10,7 +10,7 @@ public class Lizard : MonoBehaviour
         if (otherObject.GetComponent<Defender>())
         {
             GetComponent<Attacker>().Attack(otherObject);
-            GetComponent<Attacker>().SetMovementSpeed(0);
+
         }
 
     }
