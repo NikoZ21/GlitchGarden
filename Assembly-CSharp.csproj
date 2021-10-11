@@ -64,8 +64,10 @@
     <Compile Include="Assets\Scripts\DefenderButton.cs" />
     <Compile Include="Assets\Scripts\DisplayStars.cs" />
     <Compile Include="Assets\Scripts\SpawnDefenders.cs" />
-    <Compile Include="Assets\Fox.cs" />
-    <Compile Include="Assets\GraveStone.cs" />
+    <Compile Include="Assets\Scripts\Fox.cs" />
+    <Compile Include="Assets\Scripts\GraveStone.cs" />
+    <Compile Include="Assets\Scripts\LivesCollider.cs" />
+    <Compile Include="Assets\DisplayLives.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
