@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\DisplayStars.cs" />
     <Compile Include="Assets\Scripts\SpawnDefenders.cs" />
     <Compile Include="Assets\Fox.cs" />
+    <Compile Include="Assets\GraveStone.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

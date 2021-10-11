@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Fox : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
+        GameObject otherObject = collision.gameObject;
+        if (otherObject.GetComponent<GraveStone>())
+        {
+            GetComponent<Animator>().SetTrigger("Jump");
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+
+        }
+        else if (otherObject.GetComponent<Defender>())
+        {
+            GetComponent<Attacker>().Attack(otherObject);
+        }
+
+
     }
 }
