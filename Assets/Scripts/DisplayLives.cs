@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class DisplayLives : MonoBehaviour
 {
     [SerializeField] Image[] hearts;
-    [SerializeField] int currentHealth = 3;
+    [SerializeField] int currentHealth = 2;
 
 
 

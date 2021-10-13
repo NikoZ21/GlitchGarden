@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{57519B5A-0702-8D5E-8344-BE203C54CCC3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -59,15 +60,16 @@
     <Compile Include="Assets\Scripts\LevelLoader.cs" />
     <Compile Include="Assets\Scripts\Defender.cs" />
     <Compile Include="Assets\Scripts\AttackerSpawner.cs" />
+    <Compile Include="Assets\Scripts\Fox.cs" />
     <Compile Include="Assets\Scripts\Attacker.cs" />
     <Compile Include="Assets\Scripts\Lizard.cs" />
-    <Compile Include="Assets\Scripts\DefenderButton.cs" />
-    <Compile Include="Assets\Scripts\DisplayStars.cs" />
-    <Compile Include="Assets\Scripts\SpawnDefenders.cs" />
-    <Compile Include="Assets\Scripts\Fox.cs" />
-    <Compile Include="Assets\Scripts\GraveStone.cs" />
     <Compile Include="Assets\Scripts\LivesCollider.cs" />
-    <Compile Include="Assets\DisplayLives.cs" />
+    <Compile Include="Assets\Scripts\DefenderButton.cs" />
+    <Compile Include="Assets\Scripts\DisplayLives.cs" />
+    <Compile Include="Assets\Scripts\DisplayStars.cs" />
+    <Compile Include="Assets\Scripts\GraveStone.cs" />
+    <Compile Include="Assets\Scripts\SpawnDefenders.cs" />
+    <Compile Include="Assets\Scripts\GameTimer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

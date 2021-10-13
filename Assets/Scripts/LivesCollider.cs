@@ -10,6 +10,7 @@ public class LivesCollider : MonoBehaviour
         var attacker = collision.GetComponent<Attacker>();
         if (attacker)
         {
+            Debug.Log("Attacker");
             FindObjectOfType<DisplayLives>().TakeLives(damageByAttackers);
         }
     }
